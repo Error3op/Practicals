@@ -1,0 +1,791 @@
+
+Practical 1: Design a webpage that makes use of Document Structure Tags, Various Text Formatting Tags, List Tags, and Image and Image Maps
+
+
+**a. Document Structure Tags**
+
+Web pages have two basic containers: the head and the body:
+
+- The `<head>` tag, which contains information, or metadata, about the web page, such as a title for the page, JavaScript, styles (CSS), meta information, and more. Whatever is inside the `<head>` tag does not display on the web page itself.
+
+- The `<body>` tag, containing the content that actually displays in a browser
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The title of your Web page goes here</title>
+</head>
+<body>
+    The text and images on your Web page go here
+</body>
+</html>
+
+b. Various Text Formatting Tags
+
+<html>
+<head>
+    <title>Phoenix InfoTech</title>
+</head>
+<body>
+    <p><b>Bold</b> Text Example.</p>
+    <p><i>Italic</i> Text Example.</p>
+    <p><u>Underline</u> Text Example.</p>
+</body>
+</html>
+
+c. List Tags (Unordered and Ordered Lists)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Unordered List</title>
+</head>
+<body>
+    <font size=5>
+    Names of Students
+    <ul>
+        <li>Kunal</li>
+        <li>Ishita</li>
+        <li>Shravi</li>
+        <li>Sharvari</li>
+        <li>Mayuri</li>
+        <li>Shreyas</li>
+    </ul>
+    </font>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Unordered List</title>
+</head>
+<body>
+    <font size=5>
+    Names of Teachers
+    <ol>
+        <li>Savita Madam</li>
+        <li>Snehal Madam</li>
+        <li>Shwetangi Madam</li>
+        <li>Sapana Madam</li>
+        <li>Shalaka Madam</li>
+        <li>Sonal Madam</li>
+    </ol>
+    </font>
+</body>
+</html>
+
+
+d. Image and Image Maps
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phoenix InfoTech</title>
+</head>
+<body>
+    <p>Using Image in Webpage</p>
+    <img src="Penguins.jpg" alt="Penguins">
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Example of Image Map</p>
+    <img src="desert.jpg" width="145" height="126" usemap="#map">
+    <map name="map">
+        <area shape="rect" coords="0,0,82,126" alt="Jellyfish" href="Jellyfish.htm">
+        <area shape="circle" coords="90,58,3" alt="Koala" href="Koala.htm">
+        <area shape="circle" coords="124,58,8" alt="Penguins" href="Penguins.htm">
+    </map>
+</body>
+</html>
+
+Practical 2: Design a webpage that makes use of Table tags and Form Tags
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Practical 2: Design a webpage that makes use of Table tags and Form Tags</h1>
+
+    <!-- Table Tags -->
+    <h2>Student Information Table</h2>
+    <table border="1" bordercolor="red" width="40%" height="40%" cellspacing="2" cellpadding="10" bgcolor="lightgray" align="center">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>Project Completed</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Kunal</td>
+            <td>90</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ishita</td>
+            <td>90</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shreya</td>
+            <td>92</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Shravi</td>
+            <td>80</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+    <!-- Form Tags -->
+    <h2>User Information Form</h2>
+    <form action="">
+        <div>
+            <label for="lastname">User Last Name:</label>
+            <input type="text" id="lastname" />
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" />
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label>Hobbies:</label>
+            <input type="checkbox" id="c1" />
+            <label for="c1">Sports</label>
+            <input type="checkbox" id="c2" />
+            <label for="c2">Entertainment</label>
+            <input type="checkbox" id="c3" />
+            <label for="c3">News</label>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>Japan</option>
+                <option>UK</option>
+            </select>
+        </div>
+        <div>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Login" />
+        </div>
+    </form>
+</body>
+</html>
+
+Practical 3: Design a webpage that make use of CSS for Background, Fonts, and Positioning
+
+a. CSS Properties to Change the Background of a Page
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Image</title>
+    <style>
+        body { background: #efefef url(bg.gif) repeat fixed top left; }
+    </style>
+</head>
+<body>
+    <h1>Setting a Background Image</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+b. CSS Properties to Change Fonts and Text Styles
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulating Text</title>
+    <style>
+        p { direction: rtl; }
+    </style>
+</head>
+<body>
+    <p>This text will be rendered from right to left</p>
+</body>
+</html>
+
+c.CSS Properties for Positioning an Element
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning</title>
+    <style>
+        h2.pos_static {
+            position: static;
+        }
+        p.pos_fixed {
+            position: relative;
+            bottom: 48px;
+            left: 50px;
+            background-color: yellow;
+        }
+        p.pos_left {
+            position: relative;
+            left: -5px;
+        }
+        p.pos_right {
+            position: relative;
+            left: 20px;
+        }
+        img {
+            position: absolute;
+            left: 35px;
+            top: 35px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="pos_static">This is a heading</h2>
+    <p class="pos_left">This is a paragraph at left position</p>
+    <p class="pos_right">This is a paragraph at right position</p>
+    <p class="pos_fixed">This is a paragraph at fixed position</p>
+    <img src="bg.gif">
+</body>
+</html>
+
+Practical 4
+
+Write JavaScript code for
+a. Performing various mathematical operations such as calculating factorial / finding Fibonacci Series / displaying prime numbers in a given range / evaluating expressions / calculating reverse of a number
+b. Validating the various form elements
+a. Program to print factorial of a number
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Calculation</title>
+</head>
+<body>
+    <font size="5">
+    <script language="JavaScript">
+        var n, n1, f;
+        f = 1;
+        n = parseInt(prompt("Enter a number :"));
+        n1 = n;
+        while (n > 0) {
+            f = f * n;
+            n--;
+        }
+        document.write("Factorial of " + n1 + " is " + f);
+    </script>
+    </font>
+</body>
+</html>
+
+b.Program to Print Fibonacci Series
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <font size="5">
+    <script language="JavaScript">
+        var var1 = 0;
+        var var2 = 1;
+        var var3;
+        var num = prompt("Enter the limit to generate Fibonacci series:", 0);
+        document.write(var1 + "<br />");
+        document.write(var2 + "<br />");
+        for (var i = 3; i <= num; i++) {
+            var3 = var1 + var2;
+            var1 = var2;
+            var2 = var3;
+            document.write(var3 + "<br />");
+        }
+    </script>
+    </font>
+</body>
+</html>
+
+c.Program to Display Prime Numbers in a Given Range
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Numbers</title>
+    <script>
+        function printPrime() {
+            var i, j;
+            var limit = document.getElementById("limit").value;
+            document.getElementById("result").innerHTML = ""; // Clear previous results
+            for (i = 1; i <= limit; i++) {
+                var c = 0;
+                for (j = 1; j <= i; j++) {
+                    if (i % j == 0) {
+                        c++;
+                    }
+                }
+                if (c == 2) {
+                    document.getElementById("result").insertAdjacentHTML("beforeend", i + "<br>");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript to print Prime numbers!</h2>
+    Enter the limit: <input type="number" id="limit" value="0" style="width: 100px;">&nbsp;
+    <input type="button" value="Print Prime Numbers" onclick="printPrime()">
+    <div id="result"></div>
+</body>
+</html>
+
+Program for Evaluating Expressions
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Click the button to evaluate/execute JavaScript code/expressions.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x = 10;
+            var y = 20;
+            var a = eval("x * y") + "<br>";
+            var b = eval("2 + 2") + "<br>";
+            var c = eval("x + 17") + "<br>";
+            var res = a + b + c;
+            document.getElementById("demo").innerHTML = res;
+        }
+    </script>
+</body>
+</html>
+
+Program to Calculate Reverse of a Number
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse of a Number</title>
+    <script>
+        function palin() {
+            var a, no, b, temp = 0;
+            no = Number(document.getElementById("no_input").value);
+            b = no;
+            while (no > 0) {
+                a = no % 10;
+                no = parseInt(no / 10);
+                temp = temp * 10 + a;
+            }
+            alert("Reverse of " + b + " is " + temp);
+        }
+    </script>
+</head>
+<body>
+    Enter any Number: <input id="no_input" type="number">
+    <button onclick="palin()">Check Reverse</button>
+</body>
+</html>
+
+b.Validating the Various Form Elements
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <script>
+        function chkData() {
+            var nm = document.frm.username.value;
+            var pw = document.frm.pwd.value;
+            if (nm == "") {
+                alert("Please enter name");
+                return false;
+            } else if (pw.length < 6) {
+                alert("Password should be more than 6 characters");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="frm" method="post" action="#" onsubmit="return chkData();">
+
+Practical 5: Demonstrating JavaScript Objects as string.regxp,math,date
+a.string
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript String Properties</title>
+</head>
+<body>
+    <h2>JavaScript String Properties</h2>
+    <p>The length property returns the length of a string:</p>
+    <p id="str"></p>
+
+    <script>
+        var s = "Phoenix InfoTech";
+        document.getElementById("str").innerHTML = s.length;
+    </script>
+</body>
+</html>
+b.regxp
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Regular Expressions</title>
+</head>
+<body>
+    <h2>JavaScript Regular Expressions</h2>
+    <p>Search for an "e" in the next paragraph:</p>
+    <p id="p01">The best things in life are free!</p>
+    <p id="demo"></p>
+
+    <script>
+        var text = document.getElementById("p01").innerHTML;
+        document.getElementById("demo").innerHTML = /e/.test(text);
+    </script>
+</body>
+</html>
+
+c.Math Object
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Math.round()</title>
+</head>
+<body>
+    <h2>JavaScript Math.round()</h2>
+    <p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = Math.round(4.4);
+    </script>
+</body>
+</html>
+
+d.Date Object
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript new Date()</title>
+</head>
+<body>
+    <h2>JavaScript new Date()</h2>
+    <p>Using new Date(), creates a new date object with the current date and time:</p>
+    <p id="demo"></p>
+
+    <script>
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d;
+    </script>
+</body>
+</html>
+
+Practical 6-create a xml file with internal / external dtd and display it using 
+a.CSS b.xsl
+
+<!-- XML with Internal DTD -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE details [
+    <!ELEMENT details (emp_name, company, emp_phone)>
+    <!ELEMENT emp_name (#PCDATA)>
+    <!ELEMENT company (#PCDATA)>
+    <!ELEMENT emp_phone (#PCDATA)>
+]>
+<details>
+    <emp_name>Kunal</emp_name>
+    <company>Phoenix InfoTech</company>
+    <emp_phone>020 64700515</emp_phone>
+</details>
+
+<!-- XML with External DTD -->
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE details SYSTEM "Details.dtd">
+<details>
+    <emp_name>Kunal</emp_name>
+    <company>Phoenix InfoTech</company>
+    <emp_phone>020 64700515</emp_phone>
+</details>
+
+<!-- External DTD File Content (Details.dtd) -->
+<!ELEMENT details (emp_name, company, emp_phone)>
+<!ELEMENT emp_name (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT emp_phone (#PCDATA)>
+
+prac 7-Design a webpage for handling asynchronous requests using AJAX on both mouseover and button click events.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX - Fetching Data On Mouse Hover</title>
+    <style type="text/css">
+        .img {
+            height: 40%;
+        }
+    </style>
+    <script>
+        var XMLHttpRequestObject = false;
+
+        if (window.XMLHttpRequest) {
+            XMLHttpRequestObject = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        function getData(dataSource, divID) {
+            if (XMLHttpRequestObject) {
+                var obj = document.getElementById(divID);
+                XMLHttpRequestObject.open("GET", dataSource);
+
+                XMLHttpRequestObject.onreadystatechange = function() {
+                    if (XMLHttpRequestObject.readyState == 4 && XMLHttpRequestObject.status == 200) {
+                        obj.innerHTML = XMLHttpRequestObject.responseText;
+                    }
+                }
+                XMLHttpRequestObject.send(null);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Fetching data with AJAX</h1>
+    <form>
+        <!-- Images with Mouseover Events -->
+        <img class="img" src="img/Image1.jpg" onmouseover="getData('data/soup.txt', 'targetDiv')">
+        <img class="img" src="img/Image2.jpg" onmouseover="getData('data/pizza.txt', 'targetDiv')">
+
+        <!-- Button with Click Event -->
+        <input type="button" value="Fetch Sandwich Data" onclick="getData('data/sandwiches.txt', 'targetDiv')">
+    </form>
+
+    <h1 style="text-align: center;">The fetched data will go here:</h1>
+    <div id="targetDiv">
+        <h1>The fetched data will go here.</h1>
+    </div>
+</body>
+</html>
+
+Practical 8-Write php scripts
+a.retrieving data
+
+a.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <font size="5">
+        <form method="post" action="web6.php">
+            Enter Font: <input type="text" name="fname"><br><br>
+            Enter Background Color: <input type="text" name="bcolor"><br><br>
+            Enter String: <input type="text" name="str"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </font>
+</body>
+</html>
+
+b.phpscript
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Display</title>
+</head>
+<body>
+    <?php
+        $f = $_POST['fname'];
+        $c = $_POST['bcolor'];
+        $s = $_POST['str'];
+
+        echo "<body bgcolor='$c'><font face='$f' size='6'>$s</font></body>";
+    ?>
+</body>
+</html>
+
+To test this setup:
+
+Save the HTML file as form.html.
+Save the PHP file as web6.php in a server environment (like XAMPP or WAMP) under the htdocs directory.
+Access form.html through the server (e.g., http://localhost/form.html), fill out the form, and submit to see the styled output generated by web6.php.
+
+Practical 9 (a) Write php scripts for 
+a.working with databases (storing records/reprieving records and display them)
+
+PHP Script (File: database_operations.php)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Operations</title>
+</head>
+<body>
+    <?php
+        // Establish a connection to the MySQL database
+        $con = mysql_connect("localhost", "root", "") or die(mysql_error());
+        echo "Connection Successful<br>";
+
+        // Select the database
+        mysql_select_db("myclass", $con);
+        echo "Connected to database<br>";
+
+        // Create the department table
+        mysql_query("CREATE TABLE IF NOT EXISTS department (
+            dno INT PRIMARY KEY,
+            dname VARCHAR(20)
+        )");
+        echo "Table 'department' created<br>";
+
+        // Insert records into the department table
+        mysql_query("INSERT INTO department (dno, dname) VALUES (01, 'Stat')");
+        mysql_query("INSERT INTO department (dno, dname) VALUES (02, 'Computer')");
+        mysql_query("INSERT INTO department (dno, dname) VALUES (03, 'Maths')");
+        echo "Inserted records into department table<br>";
+
+        // Create the students table
+        mysql_query("CREATE TABLE IF NOT EXISTS students (
+            sno INT PRIMARY KEY,
+            name VARCHAR(20),
+            dob DATE
+        )");
+        echo "Table 'students' created<br>";
+
+        // Insert records into the students table
+        mysql_query("INSERT INTO students (sno, name, dob) VALUES (01, 'Supriya', '1990-11-21')");
+        mysql_query("INSERT INTO students (sno, name, dob) VALUES (02, 'Priya', '1989-10-30')");
+        mysql_query("INSERT INTO students (sno, name, dob) VALUES (03, 'Ravi', '1991-06-15')");
+        echo "Inserted records into students table<br><br>";
+
+        // Retrieve and display records from the students table
+        $result = mysql_query("SELECT * FROM students");
+        echo "<table border='1'>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>B'Date</th>
+                </tr>";
+        while ($row = mysql_fetch_array($result)) {
+            echo "<tr>
+                    <td>{$row['sno']}</td>
+                    <td>{$row['name']}</td>
+                    <td>{$row['dob']}</td>
+                  </tr>";
+        }
+        echo "</table><br>";
+
+        // Retrieve and display records from the department table
+        $result1 = mysql_query("SELECT * FROM department");
+        echo "<table border='1'>
+                <tr>
+                    <th>Dept No</th>
+                    <th>Dept Name</th>
+                </tr>";
+        while ($row = mysql_fetch_array($result1)) {
+            echo "<tr>
+                    <td>{$row['dno']}</td>
+                    <td>{$row['dname']}</td>
+                  </tr>";
+        }
+        echo "</table><br>";
+
+        // Close the database connection
+        mysql_close($con);
+        echo "Connection closed<br>";
+    ?>
+</body>
+</html>
+
+Explanation
+Database Connection:
+
+Establishes a connection to the MySQL database on localhost with username root and no password.
+Selects the database myclass. You may need to create this database in MySQL before running the script.
+Creating Tables:
+
+Creates a department table with fields dno (department number) and dname (department name).
+Inserts sample records into the department table.
+Creates a students table with fields sno (student number), name, and dob (date of birth).
+Inserts sample records into the students table.
+Retrieving and Displaying Records:
+
+Retrieves all records from the students table and displays them in an HTML table.
+Retrieves all records from the department table and displays them in a separate HTML table.
+Closing the Connection:
+
+Closes the MySQL database connection after completing operations.
+Important Notes
+Make sure to create the myclass database in your MySQL server before running this script.
+This script uses mysql_* functions, which are deprecated in PHP 7 and later. It is recommended to use mysqli_* or PDO for newer PHP versions. If you're using a newer version of PHP, replace mysql_* functions with mysqli_*.
+This script should be saved as database_operations.php and run in a server environment like XAMPP or WAMP. Access it via http://localhost/database_operations.php to view the output. Let me know if you need further help with other parts of Practical 9.
+
+Prac10-design a webpage with jquery animation effect
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The jQuery Example</title>
+    
+    <!-- Import jQuery library -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <!-- jQuery Animation Script -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Show the div with animation
+            $("#show").click(function() {
+                $(".mydiv").show(1000); // Shows the div in 1 second
+            });
+
+            // Hide the div with animation
+            $("#hide").click(function() {
+                $(".mydiv").hide(1000); // Hides the div in 1 second
+            });
+        });
+    </script>
+
+    <!-- Styling for the div -->
+    <style>
+        .mydiv {
+            margin: 10px;
+            padding: 12px;
+            border: 2px solid #666;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Div that will be shown/hidden -->
+    <div class="mydiv">
+        This is a SQUARE
+    </div>
+
+    <!-- Buttons to trigger the show/hide animations -->
+    <input id="hide" type="button" value="Hide" />
+    <input id="show" type="button" value="Show" />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
